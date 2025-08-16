@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <center>
+      <h1>LIST TABLE FORMS</h1>
+    </center>
+  </head>
+  <body>
+    <script>
+      let num1 = 12;
+      let num2 = 34;
+      let result = num1 + num2;
+      console.log(result);
+
+      // Loops
+
+      for (let i = 0; i <= 100; i++) {
+        console.log(i);
+      }
+
+      //  i=100, 100>=0 T
+      // i=99 , 99>=0 T
+      // i=0 , 0>=0 T
+      //i=-1 -1>=0 F
+      for (let i = 100; i >= 0; i--) {
+        console.log(i);
+      }
+
+      let startingNum = prompt("Enter starting number");
+      let endingNum = prompt("Enter ending number");
+      startingNum = Number(startingNum);
+      endingNum = Number(endingNum);
+
+      let sum = 0;
+      for (let i = startingNum; i <= endingNum; i++) {
+        sum = sum + i;
+      }
+
+      console.log("The sum is: " + sum);
+      let j = 1;
+      while (j >= 10) {
+        console.log(j);
+        j++;
+      }
+      let age = prompt("Enter your age?");
+      age = Number(age);
+
+      while (age <= 0) {
+        age = prompt("Enter your age aging?");
+        age = Number(age);
+      }
+      console.log("Your age is: " + age);
+    </script>
+  </body>
+</html>
