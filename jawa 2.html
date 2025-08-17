@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Functions adn Array
+    <script>
+      function sayHello() {
+        console.log("Hello world");
+      }
+
+      sayHello();
+
+      function orderedpizza(size, qty) {
+        console.log("You ordered ${size} pizza(s) and the quantity is ${qty}");
+      }
+      orderedpizza("Sm", 2);
+
+      function percentageCalculator(obtMarks, totalMarks) {
+        const percentage = (obtMarks / totalMarks) * 100;
+
+        return percentage;
+      }
+
+      const obtMarks = prompt("Enter obtain marks");
+      const totalMarks = prompt("Enter total marks");
+
+      const percentage = percentageCalculator(obtMarks, totalMarks);
+      alert("Your percentage is ${percentage}%");
+
+      const names = [
+        "Zeeshan",
+        "Asad",
+        "Noukhaiz",
+        3,
+        4,
+        5,
+        6,
+        true,
+        false,
+        [3, 444],
+      ];
+      console.log(names[10]);
+
+      names.push("New Name");
+      names.push("New Name");
+      names.push("New Name");
+      names.push("New Name");
+
+      names.pop();
+
+      // Ads in start
+      names.unshift("Farhan");
+
+      // Remove from start
+      names.shift();
+
+      console.log(names.length);
+
+      console.log(names.includes("Asad"));
+
+      console.log(names.indexOf("Farhan"));
+    </script>
+  </body>
+</html>
